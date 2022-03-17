@@ -1,0 +1,32 @@
+/* Criar um aplicatovo ReactJs */
+
+yarn create react-app [nome do projeto] --template typescript
+
+/* Conectar um banco de dados */
+
+1 - https://console.firebase.google.com
+2 - yarn add firebase
+3 - Criar uma pasta src para -> Services depois - > firebase.ts
+4 - vai fazer um import firebase
+    import firebase from 'firebase/app';
+5 - vai na configuração do firebase vai pegar as informações
+6 - Depois fiz firebase.initializeApp(firebaseConfig)
+7 - Firebase ele da umas dicas de como utilizalo 
+  você terar que fazer importações como:
+    import 'fireabase/auth';
+    import 'firebase/database';
+8 - Depois de fazer isso, tem que excluir a pasta node_modules
+  depois dar um apenas o yarn 
+    ir em packge.json 
+      modificar a depedência do firebase para "8.6.7"
+
+/* Configurando o banco de dados */
+
+1 - criar um arquivo chamado .env.local
+  "ele não será mandando para o github, por isso ele fica cinza"
+2 - vai colocar as variáveis
+  vou adicionar no projeto e a isadora copiar
+3 - quando é variavel do react, precisa colocar react_app 
+4 - retorna para fireabase.ts 
+  e você apaga as configurações
+    vai adicionando process.env.REACT_APP ......
